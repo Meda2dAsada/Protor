@@ -25,6 +25,8 @@ EXTENSIONS = {
     'yml': 'yaml',
 }
 
+INSERTIONS = {'(': '()', '{': '{}', '[': '[]',  '<': '<>', '\"': '""', '\'': '\'\''}
+FORBIDDEN_CHARS = ['\\', '/', ':', '*', '?', '"', '<', '>', '|']
 MAX_NAME_LENGTH = 12
 MAX_EXTENSION_LENGTH = 9
 FILE = 'file'
