@@ -1,2 +1,5 @@
+
+MAX_NAME_LENGTH = 12
+MAX_EXTENSION_LENGTH = 9
 FILE = 'file'
 DIRECTORY = 'directory'

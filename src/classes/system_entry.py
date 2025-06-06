@@ -6,7 +6,7 @@ class SystemEntry:
         self.__name: str = None
         self.__path: str = None
         self.__entry_type: str = None
-    
+
         self.set_name(name)
         self.set_path(path)
         self.__set_entry_type(entry_type)
@@ -18,12 +18,15 @@ class SystemEntry:
 
     def get_entry_type(self): return self.__entry_type
     
-    def validate_strings(self, string: str  ):
+    def validate_strings(self, string: str):
         return isinstance(string, str) and bool(string.strip())
+
     def set_name(self, name: str): 
         if self.validate_strings(name):
             self.__name = name
-    
+        else:
+            raise ValueError('Name must not be empty.')
+
     def set_path(self, path: str): 
         if self.validate_strings(path):
             self.__path = path.replace('\\', '/')

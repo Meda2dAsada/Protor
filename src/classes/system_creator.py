@@ -5,8 +5,16 @@ from src.constants.const import DIRECTORY, FILE
 class SystemCreator:
 
     @staticmethod
-    def get_file_extension(name: str):
-        return os.path.splitext(name)
+    def trim_file(name: str):
+
+        if not '.' in name:
+            return name, ''
+        
+        split = name.split('.')
+        extension = split.pop()
+        
+        return '.'.join(split), extension
+
 
     @staticmethod
     def write_entry(system_entry: str, content: str, entry_type: str):

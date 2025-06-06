@@ -7,14 +7,14 @@ class File(SystemEntry):
     def __init__(self, name: str, path: str = None, content: str | None = None):
         super().__init__(name, path, FILE)
         self.__content: str = None
-        self.__extension = None
+        self.__split_name = None
         self.set_content(content)
         self.__set_extension(name)
 
-    def get_extension(self): return self.__extension
+    def get_split_name(self): return self.__split_name
     
     def __set_extension(self, name: str):
-        self.__extension = f'.{SystemCreator.get_file_extension(name)[1]}'
+        self.__split_name = SystemCreator.trim_file(name)
 
     def write_self(self):
         SystemCreator.write_entry(self.get_absolute_path(), self.get_content(), self.get_entry_type())

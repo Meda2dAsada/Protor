@@ -50,8 +50,13 @@ Button{
     background: #11a5e5;
 }
 
+
 #constants {
     background: #11aa44;
+}
+
+#config {
+    background: #c2178f;
 }
 
 #exit {
