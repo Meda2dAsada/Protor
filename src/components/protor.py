@@ -15,9 +15,9 @@ class Protor(App):
     CSS_PATH = '../../css/protor.tcss'
     def __init__(self):
         super().__init__()
-        self.__proyect_button = Button('New proyect', id='new_proyect', variant='error', classes='option_button')
-        self.__schemas_button = Button('Schemas', id='schemas', variant='primary', classes='option_button')
-        self.__constants_button = Button('Constants', id='constants', variant='success', classes='option_button')
+        self.__proyect_button = Button('New proyect', id='new_proyect', classes='option_button')
+        self.__schemas_button = Button('Schemas', id='schemas', classes='option_button')
+        self.__constants_button = Button('Constants', id='constants', classes='option_button')
         self.__config_button = Button('Configs', id='config', classes='option_button')        
         self.__exit_button = Button('Exit', id='exit', classes='option_button')
         self.__file = File('protor.py')

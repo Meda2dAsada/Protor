@@ -14,10 +14,6 @@ class File(SystemEntry):
         self.set_content(content)
         self.__set_split_name(name)
 
-    def get_split_name(self): return self.__split_name
-    def get_extension(self): return self.__extension
-    def get_file_name(self): return self.__file_name
-
     def __set_split_name(self, name: str):
         self.__split_name = SystemCreator.trim_file(name)
         self.__file_name = self.__split_name[0]
@@ -33,3 +29,7 @@ class File(SystemEntry):
             self.__content = ''
 
     def get_content(self): return self.__content
+    def get_split_name(self): return self.__split_name
+    def get_extension(self): return self.__extension
+    def get_file_name(self): return self.__file_name
+
