@@ -1,4 +1,30 @@
 
+EXTENSIONS = {
+    'sh': 'bash',
+    'bash': 'bash',
+    'css': 'css',
+    'go': 'go',
+    'html': 'html',
+    'htm': 'html',
+    'java': 'java',
+    'js': 'javascript',
+    'mjs': 'javascript',
+    'cjs': 'javascript',
+    'json': 'json',
+    'kt': 'kotlin',
+    'kts': 'kotlin',
+    'md': 'markdown',
+    'markdown': 'markdown',
+    'py': 'python',
+    'rs': 'rust',
+    're': 'regex',
+    'regex': 'regex',
+    'sql': 'sql',
+    'toml': 'toml',
+    'yaml': 'yaml',
+    'yml': 'yaml',
+}
+
 MAX_NAME_LENGTH = 12
 MAX_EXTENSION_LENGTH = 9
 FILE = 'file'

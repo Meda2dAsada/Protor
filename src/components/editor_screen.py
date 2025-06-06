@@ -8,7 +8,7 @@ from src.components.editor import Editor
 from src.components.warning_screen import WarningScreen
 
 from src.classes.file import File
-from src.constants.const import MAX_NAME_LENGTH, MAX_EXTENSION_LENGTH
+from src.constants.const import MAX_NAME_LENGTH, MAX_EXTENSION_LENGTH, EXTENSIONS
 
 
 class EditorScreen(Screen):
@@ -18,7 +18,7 @@ class EditorScreen(Screen):
         self.__file = file
         self.__is_saved = True
         self.__header = Header(True)
-        self.__editor = Editor(self.__file.get_content(), id='editor')
+        self.__editor = Editor(self.__file.get_content(), EXTENSIONS.get(self.__file.get_extension()), id='editor')
         self.__set_title()
 
     def compose(self):
@@ -40,7 +40,7 @@ class EditorScreen(Screen):
         if len(extension) > MAX_EXTENSION_LENGTH:
             extension = f'[{extension[:MAX_EXTENSION_LENGTH]}]'
 
-        return name +'.'+  extension
+        return f'{name}.{extension}'
 
 
     def __set_title(self):

@@ -18,10 +18,9 @@ class Protor(App):
         self.__proyect_button = Button('New proyect', id='new_proyect', variant='error', classes='option_button')
         self.__schemas_button = Button('Schemas', id='schemas', variant='primary', classes='option_button')
         self.__constants_button = Button('Constants', id='constants', variant='success', classes='option_button')
-        self.__config_button = Button('Configuration', id='config', classes='option_button')
-
+        self.__config_button = Button('Configs', id='config', classes='option_button')        
         self.__exit_button = Button('Exit', id='exit', classes='option_button')
-        self.__file = File('protor.app')
+        self.__file = File('protor.py')
 
     def __set_title(self): self.title = Protor.__name__
 
