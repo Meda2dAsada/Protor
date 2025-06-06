@@ -1,0 +1,28 @@
+{
+    "folder_names": {
+        "src": "src",
+        "assets": "assets",
+        "components": "components",
+        "classes": "classes"
+    },
+    
+    "file_names": {
+        "main_py": {
+            "name": "main.py",
+            "content": ""
+        },
+        "test_py": {
+            "name": "test.py",
+            "content": ""
+        },
+        "init_py": {
+            "name": "__init__.py",
+            "content": ""
+        },
+        "git_ignore": {
+            "name": ".gitignore",
+            "content": ""
+        }
+    },
+    "file": 
+}
