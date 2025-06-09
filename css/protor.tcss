@@ -41,12 +41,12 @@ Button{
     margin: 0 1 1 1;
 }
 
-#new_proyect {
+#new_proyect, #directories {
     background: #ee2222;
 
 }
 
-#schemas {
+#templates, #files {
     background: #11a5e5;
 }
 
@@ -55,11 +55,11 @@ Button{
     background: #11aa44;
 }
 
-#config {
+#configs {
     background: #c2178f;
 }
 
-#exit {
+#exit, #back {
     background: #555555;
 }
 

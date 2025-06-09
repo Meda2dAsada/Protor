@@ -1,12 +1,13 @@
 {
-    "folder_names": {
+    "folders": {
         "src": "src",
         "assets": "assets",
         "components": "components",
         "classes": "classes"
     },
-    
-    "file_names": {
+
+    "files": {
+
         "main_py": {
             "name": "main.py",
             "content": ""
@@ -23,6 +24,5 @@
             "name": ".gitignore",
             "content": ""
         }
-    },
-    "file": 
+    }
 }
